@@ -32,7 +32,7 @@ App de agendamento de serviços de beleza (marketplace). Conecta clientes a prof
 | Deploy inicial | Docker + Railway/Fly.io |
 | Logging | Pino (com correlation ID por requisição/fluxo) |
 | Error tracking | Sentry |
-| Testes | Jest |
+| Testes | Vitest (ver ADR-001) |
 | CI/CD | GitHub Actions |
 
 ---

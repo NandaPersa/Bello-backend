@@ -112,7 +112,7 @@ Kubernetes foi deliberadamente descartado nesta fase: overhead operacional desne
 
 - **Logging:** Pino, com correlation ID por requisição/fluxo — essencial para rastrear um fluxo que atravessa vários módulos via eventos, conforme já apontado em Arquitetura_Backend_Bello.md, seção 7.
 - **Error tracking:** Sentry.
-- **Testes:** Jest — prioridade para testes de unidade no Domain (regras de negócio puras, sem necessidade de mock) e testes de integração nos casos de uso do Application dos módulos críticos (`Scheduling`, `Billing`).
+- **Testes:** Vitest (ver ADR-001) — prioridade para testes de unidade no Domain (regras de negócio puras, sem necessidade de mock) e testes de integração nos casos de uso do Application dos módulos críticos (`Scheduling`, `Billing`).
 - **CI/CD:** GitHub Actions.
 
 ---
@@ -135,7 +135,7 @@ Kubernetes foi deliberadamente descartado nesta fase: overhead operacional desne
 | Deploy futuro | AWS ECS/Fargate + RDS |
 | Logging | Pino |
 | Error tracking | Sentry |
-| Testes | Jest |
+| Testes | Vitest (ver ADR-001) |
 | CI/CD | GitHub Actions |
 
 ---
