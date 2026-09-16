@@ -1,0 +1,9 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../../../node_modules/@prisma/client-professional-catalog"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL_PROFESSIONAL_CATALOG")
+}

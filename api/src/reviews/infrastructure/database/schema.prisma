@@ -1,0 +1,9 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../../../node_modules/@prisma/client-reviews"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL_REVIEWS")
+}
