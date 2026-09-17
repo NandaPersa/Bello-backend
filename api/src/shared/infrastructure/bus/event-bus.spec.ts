@@ -70,7 +70,7 @@ describe('EventBus e Isolamento de Falhas (RetryableEventHandler)', () => {
     await new Promise(resolve => setTimeout(resolve, 100));
 
     // Prova 2: Tentou exatamente 4 vezes
-    expect(handler.attemptsMade).toBe(5);
+    expect(handler.attemptsMade).toBe(4);
 
     // Prova 3: Logou os 3 warnings de retry
     expect(warnSpy).toHaveBeenCalledTimes(3);
